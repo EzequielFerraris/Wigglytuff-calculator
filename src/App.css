@@ -1,0 +1,80 @@
+h2 {
+    font-family: 'Dancing Script', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+.App {
+    width: 100%;
+    height: 100vh;
+    padding-top: 10px;
+    font-family: Lato, sans-serif;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    width: 350px;
+    height: 530px;
+    padding: 14px;
+    margin: 14px;
+    background-color: #D3A8B1;
+    border-radius: 20px;
+    border: 5px solid #595B5B;
+}
+
+.row {
+    margin: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Wigglytuff1 {
+    position: absolute;
+    left: 0.5rem;
+}
+
+#Wigglytuff2 {
+    position: absolute;
+    right: 0.5rem;
+    transform: scaleX(-1);
+}
+
+
+@media screen and (max-width: 1250px) {
+
+    #Wigglytuff1 {display:none;}
+    #Wigglytuff2 {
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
+}
+
+@media screen and (max-width: 738px) {
+    .App {
+        flex-direction: row;
+    }
+    #Wigglytuff1 {display:none;}
+    #Wigglytuff2 {
+      position: relative;
+      right: 0;
+      bottom: 0;
+    }
+}
+/*colors
+
+rosa fuerte #D3A8B1
+rosa #F7E3E8
+celeste #368899
+azul #246889
+gris #595B5B
+blanco #F4EDF3
+
+
+*/
