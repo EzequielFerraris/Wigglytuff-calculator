@@ -9,9 +9,9 @@ import wiggly from "./images/Wigglytuff.png";
 
 function App() {
 
-  const [input, setInput] = useState('0');
-  const [result, setResult] = useState(''); 
-  const [flag, setFlag] = useState('0');
+  const [input, setInput] = useState("0");
+  const [result, setResult] = useState(""); 
+  const [flag, setFlag] = useState("0");
   const [pointFlag, setPoinFlag] = useState("0");
 
   const addInput = val => {
@@ -25,7 +25,7 @@ function App() {
       else {
         setPoinFlag("1");
         setInput(input + val);
-      };
+      }
     }
     else if (/[-+*/]/.test(val)) {
       setFlag("0");
@@ -45,15 +45,15 @@ function App() {
     else if(/[0-9]/.test(val)) {
       switch(flag) 
      {
-      case "0":
-        setInput(input + val);
-        break;
       case "1":
         setInput(val);
         setFlag("0");
         break;
+      default:
+        setInput(input + val);
+        break;
      }
-    };
+    }
   };
 
   const newResult = val => {setResult(val)};
@@ -65,7 +65,7 @@ function App() {
       newResult(result);
       setFlag("1");
       setPoinFlag("0");
-    };
+    }
   };
 
   const handleClear = () => {
