@@ -5,13 +5,14 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
     background-color: #313131;
     color: F4EDF3;
     padding-right: 30px;
     margin: 1px solid #888888;
     box-shadow: 1px 4px 1px -1px #F4EDF3;
 }
+
 .upper-screen {
     box-sizing: border-box;
     color: #F4EDF3;
